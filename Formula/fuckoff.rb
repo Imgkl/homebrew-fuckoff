@@ -10,7 +10,6 @@ class Fuckoff < Formula
 
   def install
     virtualenv_create(libexec, "python3.9")
-    system libexec/"bin/pip", "install", "prompt_toolkit==3.0.36"
     system libexec/"bin/pip", "install", "questionary==2.0.1"
     system libexec/"bin/pip", "install", "-e", "."
     bin.install_symlink libexec/"bin/fuckoff"
