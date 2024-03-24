@@ -9,7 +9,11 @@ class Fuckoff < Formula
   depends_on "python@3.9"
 
   def install
-    virtualenv_install_with_resources
+    virtualenv_create(libexec, "python3.9")
+    system libexec/"bin/pip", "install", "prompt_toolkit==3.0.36"
+    system libexec/"bin/pip", "install", "questionary==2.0.1"
+    system libexec/"bin/pip", "install", "-e", "."
+    bin.install_symlink libexec/"bin/fuckoff"
   end
 
   test do
