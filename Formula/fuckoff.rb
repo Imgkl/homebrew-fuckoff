@@ -8,8 +8,8 @@ class Fuckoff < Formula
   depends_on "python@3.9"
 
   def install
-     system "pip", "install", "questionary==2.0.1"
-     virtualenv_install_with_resources
+    system "pip", "install", "questionary==2.0.1"
+    virtualenv_install_with_resources
   end
 
   test do
