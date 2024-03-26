@@ -3,8 +3,8 @@ class Fuckoff < Formula
 
   desc "CLI tool to manage and clear Zsh history"
   homepage "https://github.com/Imgkl/fuckoff"
-  url "https://github.com/Imgkl/fuckoff/archive/refs/tags/v1.0.3.tar.gz"
-  sha256 "6158fcfe7caa8184fd8cde0671666b2b135da879ab734793d125fc1b52f352dc"
+  url "https://github.com/Imgkl/fuckoff/archive/refs/tags/v1.0.4.tar.gz"
+  sha256 "04f36a709a71b4bbd2a65c4e8df17eab2f1837ebc759f31960b336cc6fe8fabe"
   depends_on "python@3.9"
 
   def install
