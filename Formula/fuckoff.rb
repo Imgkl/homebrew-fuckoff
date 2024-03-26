@@ -8,7 +8,9 @@ class Fuckoff < Formula
   depends_on "python@3.9"
 
   def install
-    virtualenv_create(libexec, "python3.9")
+    venv = virtualenv_create(libexec, "python3.9", system_site_packages: true)
+    venv.pip_install "questionary==2.0.1"
+    venv.pip_install_and_link buildpath
     virtualenv_install_with_resources
   end
 
